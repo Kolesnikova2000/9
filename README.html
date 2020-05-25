@@ -1,0 +1,18 @@
+  
+<script>
+	//Запустив файл, работоспособность мы не проверим. Для проверки в консоли пишется код. Результат будет снизу.
+	
+	let ul = document.createElement('ul');
+	document.body.append(ul);
+	let data = document.cookie.split(';');
+	for (let i = 0; i<data.length; i++) { let li = document.createElement('li'); li.textContent = data[i]; ul.append(li); }
+
+</script>
+
+</html>
+
+
+Ответы на вопросы:
+1.   Куки – строки данных, которые хранятся  в браузере.Доступ к куки осуществляется с помощью значения document.cookie. Объекты веб-хранилища localStorage и sessionStorage позволяют хранить намного больше данных, чем куки, так как не отправляются на сервер при каждом запросе. IndexedDB - встроенная база данных, но намного мощнее, чем localStorage.
+2. Технологии из данной лекции я бы применила на сайтах, где пользователю нужна авторизация. 
+3. 10/9 сайтов в наше время используют хранения данных. Такие как https://github.com/ https://e.sfu-kras.ru/my/ 
